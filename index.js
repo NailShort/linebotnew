@@ -1,5 +1,6 @@
 import 'dotenv/config'
 import linebot from 'linebot'
+import express from 'express'
 import quickReply from './commands/quickReply.js'
 // import quickReplyCF from './commands/quickReplyCF.js'
 import fishTank from './commands/fishTank.js'
@@ -13,6 +14,7 @@ import Gunfish from './commands/Gunfish.js'
 // import { append } from 'cheerio/lib/api/manipulation.js'
 // import express from 'express'
 
+const app = express()
 const bot = linebot({
   channelId: process.env.CHANNEL_ID,
   channelSecret: process.env.CHANNEL_SECRET,
@@ -42,14 +44,14 @@ bot.on('message', event => {
   }
 })
 
-// const linebotParser = bot.parser()
+const linebotParser = bot.parser()
 
-// app.post('/', linebotParser)
+app.post('/', linebotParser)
 
-// app.get('/', (req, res) => {
-//   res.srare(200).sed('ok')
-// })
+app.get('/', (req, res) => {
+  res.status(200).send('ok')
+})
 
-bot.listen('/', process.env.PORT || 3000, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log('機器人啟動')
 })
