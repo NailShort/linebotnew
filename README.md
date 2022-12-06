@@ -22,16 +22,16 @@ line 機器人作業
 
   ## <a name="Instruction"></a>操作說明
 
-1. 基本操作說明
+1. 基本操作說明<br>
    <img src="./image/操作說明.png" width="200">
 
-2. 選擇魚缸分享
+2. 選擇魚缸分享<br>
    <img src="./image/魚缸分享.jpg" width="200">
 
-3. 選擇水族討論
+3. 選擇水族討論<br>
    <img src="./image/水族討論.jpg" width="200">
 
-4. 選擇海水魚
+4. 選擇海水魚<br>
    <img src="./image/海水魚查詢.jpg" width="200">
    <img src="./image/海水魚關鍵字.jpg" width="200">
 
